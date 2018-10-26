@@ -1,0 +1,5 @@
+# md5, sha256 from https://pypi.org/pypi/python-dateutil/json
+md5	175b7c1a3cc0cb01151eced07c61c0b8  python-dateutil-2.7.3.tar.gz
+sha256	e27001de32f627c22380a688bcc43ce83504a7bc5da472209b4c70f02829f0b8  python-dateutil-2.7.3.tar.gz
+# Locally computed sha256 checksums
+sha256	ba00f51a0d92823b5a1cde27d8b5b9d2321e67ed8da9bc163eff96d5e17e577e  LICENSE

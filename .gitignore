@@ -1,7 +1,11 @@
-/output
-/dl
-/br2_downloads
-/package
+!/output
+/output/*
+!/dl
+/dl/*
+!/br2_downloads
+/br2_downloads/*
+!/package
+/package/*
 /.auto.deps
 /.config.cmd
 /.config.old

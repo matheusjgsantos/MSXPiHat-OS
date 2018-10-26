@@ -29,7 +29,8 @@ null::sysinit:/bin/ln -sf /proc/self/fd/2 /dev/stderr
 
 # Put a getty on the serial port
 console::respawn:/sbin/getty -L  console 0 vt100 # GENERIC_SERIAL
-tty1::respawn:/sbin/getty -L  tty1 0 vt100 # HDMI console
+#tty1::respawn:/sbin/getty -L  tty1 0 vt100 # HDMI console
+tty1::respawn:/bin/sh -c /run-bluemsx.sh # HDMI console
 tty2::respawn:/sbin/getty -L  tty2 0 vt100 # HDMI console
 
 # Stuff to do for the 3-finger salute
