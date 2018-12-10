@@ -42,11 +42,11 @@ CPPFLAGS = -g $(COMMON_FLAGS)
 LDFLAGS  = 
 LIBS     =  -lSDL -lz -lbcm_host -lbrcmEGL -lbrcmGLESv2 -lpthread -ludev -lbcm2835
 # Uncomment the following line to enable GPIO (requires wiring-pi)
-#CFLAGS   += -DRASPI_GPIO
+CFLAGS   += -DRASPI_GPIO
 
-ifdef RASPI_GPIO
+
 LIBS     += -lwiringPi
-endif
+
 
 TARGET   = bluemsx-pi
 
@@ -125,10 +125,9 @@ vpath % $(ROOT_DIR)/Src/Z80
 #
 SOURCE_FILES  =
 
+
 SOURCE_FILES += PiMain.c
-ifdef RASPI_GPIO
 SOURCE_FILES += PiGpio.c
-endif
 SOURCE_FILES += PiVideo.c
 SOURCE_FILES += PiVideoRender.c
 SOURCE_FILES += PiNotifications.c

@@ -515,7 +515,6 @@ int cartridgeInsert(int cartNo, RomType romType, const char* cart, const char* c
 
         case ROM_SCC:
             success &= romMapperSCCplusCreate(romName, buf, size, slot, sslot, 2, SCC_EXTENDED);
-//			printf("ROM_SCC: success (%d)\n", success);
             break;
 
         case ROM_SCCPLUS:

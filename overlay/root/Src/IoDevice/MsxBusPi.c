@@ -6,6 +6,8 @@
 //  Revised: 15-Feb-2013
 
 #define RPMC_V5
+#define RASPPI 3
+
 #include <bcm2835.h>
 // Access from ARM Running Linux
 #include "rpi-gpio.h"

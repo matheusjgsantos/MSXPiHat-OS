@@ -2155,6 +2155,7 @@ menu "System tools"
 	source "package/util-linux/Config.in"
 	source "package/xen/Config.in"
 	source "package/xvisor/Config.in"
+	source "package/bcm2835-1.56/Config.in"
 endmenu
 
 menu "Text editors and viewers"

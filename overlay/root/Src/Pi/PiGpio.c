@@ -34,9 +34,9 @@
 
 #ifdef RASPI_GPIO
 
-#define CLOCK 1
-#define LATCH 0
-#define DATA  3
+#define CLOCK 3
+#define LATCH 4
+#define DATA  25
 
 #define POWER 0x80
 #define FDD0  0x40

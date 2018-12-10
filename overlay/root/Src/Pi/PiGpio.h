@@ -27,12 +27,12 @@
 #ifndef PI_GPIO_H
 #define PI_GPIO_H
 
-#ifdef RASPI_GPIO
+
 
 void gpioInit();
 void gpioUpdateLeds();
 void gpioShutdown();
 
-#endif // RASPI_GPIO
+
 
 #endif // PI_GPIO_H

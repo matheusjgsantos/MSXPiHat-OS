@@ -1,0 +1,85 @@
+ResetProperties:0,/development/blueberryMSX/bluemsx.ini
+iniFile:/development/blueberryMSX/bluemsx.ini
+sound.MidiOut.fileName:/dev/snd/midiC1D0
+File not found:/development/blueberryMSX/Machines/MSX2+ - Ciel Expert 3 IDE/IDE240a.rom
+File not found:/development/blueberryMSX/Machines/MSX2+ - Ciel Expert 3 Turbo/Turbo.rom
+File not found:/development/blueberryMSX/Machines/MSX2+ - Gradiente Expert AC88+/expertAC88+bios.rom
+File not found:/development/blueberryMSX/Machines/MSX2+ - Gradiente Expert AC88+/expertAC88+ext.rom
+File not found:/development/blueberryMSX/Machines/MSX2+ - Gradiente Expert AC88+/expertAC88+asm.rom
+File not found:/development/blueberryMSX/Machines/MSX2+ - Gradiente Expert DDX+/expertDDX+bios.rom
+File not found:/development/blueberryMSX/Machines/MSX2+ - Gradiente Expert DDX+/expertDDX+ext.rom
+Width/height: 800/600
+Audio driver: 
+shortcut file:/development/blueberryMSX/Shortcut Profiles/blueMSX.shortcuts, 23185016
+shortcut:spritesEnable - LCtrl+LShift+S,00530501 -> 00534101
+shortcut:fdcTiming - LCtrl+LShift+F,00460501 -> 00464101
+shortcut:quit - LCtrl+Cancel,00030401 -> 00004001
+shortcut:cpuStateQuickLoad - F7,00760001 -> 01200001
+shortcut:cpuStateQuickSave - F8,00770001 -> 01210001
+shortcut:cartRemove[0] - RCtrl+F7,00760801 -> 01208001
+shortcut:cartRemove[1] - RCtrl+F8,00770801 -> 01218001
+shortcut:cartAutoReset - LCtrl+LShift+F8,00770501 -> 01214101
+shortcut:diskRemove[0] - RCtrl+F9,00780801 -> 01228001
+shortcut:diskRemove[1] - RCtrl+F10,00790801 -> 01238001
+shortcut:diskChange[0] - LAlt,01221001 -> 0a780001
+shortcut:diskAutoReset - LCtrl+LAlt+F9,00781401 -> 01224001
+shortcut:casRewind - LCtrl+LShift+F11,007a0501 -> 01244101
+shortcut:casRemove - RCtrl+F11,007a0801 -> 01248001
+shortcut:casToggleReadonly - LCtrl+LShift+F10,00790501 -> 01234101
+shortcut:casAutoRewind - LCtrl+LAlt+F10,00791401 -> 01234001
+shortcut:casSave - LCtrl+LShift+F12,007b0501 -> 01254101
+shortcut:emulationRunPause - F9,00780001 -> 01220001
+shortcut:emulationStop - F10,00790001 -> 01230001
+shortcut:emuSpeedFull - LShift+F9,00780101 -> 01220101
+shortcut:emuSpeedToggle - LCtrl+LShift+M,004d0501 -> 004d4101
+shortcut:emuSpeedNormal - LShift+F10,00790101 -> 01230101
+shortcut:emuSpeedInc - LShift+F12,007b0101 -> 01250101
+shortcut:emuSpeedDec - LShift+F11,007a0101 -> 01240101
+shortcut:windowSizeNormal - LAlt+F11,007a1001 -> 01240001
+shortcut:windowSizeFullscreen - LAlt+F12,007b1001 -> 01250001
+shortcut:windowSizeFullscreenToggle - LAlt+Enter,000d1001 -> 000d0001
+shortcut:resetSoft - LCtrl+F12,007b0401 -> 01254001
+shortcut:resetHard - F12,007b0001 -> 01250001
+shortcut:resetClean - LCtrl+LAlt+F12,007b1401 -> 01254001
+shortcut:volumeIncrease - RAlt+F8,00772001 -> 01210001
+shortcut:volumeDecrease - RAlt+F7,00762001 -> 01200001
+shortcut:volumeMute - RAlt+ScrLk,00912001 -> 00000001
+shortcut:volumeStereo - RAlt+F6,00752001 -> 011f0001
+argument:/machine cmdline:/machine MSX /romtype1 msxbus 
+argument:MSX
+argument:/romtype1 cmdline:/machine MSX /romtype1 msxbus 
+romtype=174
+insertDiskette:/dev/sda
+file not exists: /dev/sda
+insertDiskette:/dev/sdb
+file not exists: /dev/sdb
+screenMode:0
+MSXBUSs[0]=1925365920
+MSXBUSs[1]=1925365976
+clock enabled: 0x00000011
+MSX BUS initialized
+msxBusCreate 0
+MSXBus created. msxBus=1925365920 cartSlot=0 slot=1 sslot=0
+screen = 76204008, width = 272, height = 240, double = 0, interfaced = -1, sx=0.500000,sy=1.000000
+screenMode:1
+screenMode:2
+key=00310001
+key=00200001
+key=00200001
+key=00200001
+key=00200001
+key=00200001
+key=01110001
+key=00200001
+key=00200001
+key=00200001
+key=01130001
+key=00200001
+key=01120001
+key=00200001
+key=00200001
+key=01140001
+key=00200001
+key=011b0001
+key=01340001
+key=01250001

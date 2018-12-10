@@ -29,9 +29,9 @@
 #include <stdio.h>
 #include <SDL.h>
 
-#ifdef RASPI_GPIO
+#define RASPI_GPIO 1
 #include "PiGpio.h"
-#endif
+
 
 #include "CommandLine.h"
 #include "Properties.h"
@@ -135,12 +135,14 @@ static void updateLeds()
 	int floppy1LedNow = ledGetFdd1();
 	if (floppy1LedNow != floppy1LedOn) {
 		floppy1LedOn = floppy1LedNow;
-		gpioToggleFloppyLed(0, floppy1LedOn);
+//		gpioToggleFloppyLed(0, floppy1LedOn);
+		gpioUpdateLeds();
 	}
 	int floppy2LedNow = ledGetFdd2();
 	if (floppy2LedNow != floppy2LedOn) {
 		floppy2LedOn = floppy2LedNow;
-		gpioToggleFloppyLed(1, floppy2LedOn);
+//		gpioToggleFloppyLed(1, floppy2LedOn);
+	gpioUpdateLeds();
 	}
 #endif
 }
@@ -438,7 +440,8 @@ int main(int argc, char **argv)
 	fprintf(stderr, "Powering on\n");
 
 #ifdef RASPI_GPIO
-	gpioTogglePowerLed(1);
+//	gpioTogglePowerLed(1);
+	gpioUpdateLeds();
 #endif
 
 	while (!doQuit) {
@@ -458,7 +461,8 @@ int main(int argc, char **argv)
 	mixerDestroy(mixer);
 
 #ifdef RASPI_GPIO
-	gpioTogglePowerLed(0);
+//	gpioTogglePowerLed(0);
+	gpioUpdateLeds();
 #endif
 
 	piDestroyVideo();
